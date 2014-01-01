@@ -12,7 +12,6 @@ include "calculator.php";
 <body>
 <div class="bg">
     <form action="" method="get">
-    
         <table>
             <tr>
                 <td colspan="5">
