@@ -5,6 +5,6 @@ weblog:
   beshkan.blog.ir/pages/caculator
 
 author:
-  peyman ghafari pour
+  peyman ghafari pour ( پیمان غفاری پور )
 
 
