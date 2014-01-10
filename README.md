@@ -4,7 +4,7 @@ Copyright (c) 2014  peyman ghafari pour ( پیمان غفاری پور )
 
 
 license:
-    GNU v3
+        GNU v3
 
 author,
 programmer,
@@ -21,9 +21,9 @@ GNU Persian language version:
 blog:
 
 
-    beshkan.blog.ir/page/program
+        beshkan.blog.ir/page/program
 
 
 
 description:
-      add js for input ,add ajax for get result without reload page, remove some unuse code :)
+            add js for input ,add ajax for get result without reload page, remove some unuse code :)
