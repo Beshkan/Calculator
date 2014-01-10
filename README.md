@@ -1,14 +1,25 @@
 Calculator
 ====
+Copyright (c) 2014  peyman ghafari pour ( پیمان غفاری پور )
 
-weblog:
-  beshkan.blog.ir/page/program
+
+license:
+
+        GNU v3
 
 author,
 programmer,
 etc:
-  peyman ghafari pour ( پیمان غفاری پور )
+
+        peyman ghafari pour ( پیمان غفاری پور )
+
+
+blog:
+
+        beshkan.blog.ir/page/program
+
 
 
 description:
-add js for input ,add ajax for get result without reload page, remove some unuse code :)
+
+        add js for input ,add ajax for get result without reload page, remove some unuse code :)
