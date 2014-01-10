@@ -1,35 +1,15 @@
 <?php
-$result = 0;
 
-if (isset($_GET['result'])) {
-    $result = $_GET['result'];
+function Calculator($infixExpression)
+{
+    $infixArray = InfixToArrayInfix($infixExpression);
+    $postfixArray = InfixArrayToPostfixArray($infixArray);
+    return Evaluate($postfixArray);
 }
 
 //function validInfix($arrInfix)
-function Calculator()
+function validInfix($arrInfix)
 {
-    global $result;
-    if (isset($_GET['pin'])) {
-        if ($_GET['pin'] == 'C') {
-            $result = 0;
-        } elseif ($_GET['pin'] == 'CE') {
-            //$result =
-            if (substr($result, 0, -1) == '') {
-                $result = 0;
-            } else {
-                $result = substr($result, 0, -1);
-            }
-        } elseif ($_GET['pin'] == '=') {
-            $infixArray = InfixToArrayInfix($result);
-            $postfixArray = InfixArrayToPostfixArray($infixArray);
-            $result = Evaluate($postfixArray);
-        } elseif ($result == '0') {
-            $result = $_GET['pin'] != 0 ? $_GET['pin'] : 0;
-        } else {
-            $result .= $_GET['pin'];
-        }
-    }
-    return $result;
 }
 
 function is_operator($op)
@@ -96,10 +76,6 @@ function InfixArrayToPostfixArray($infixArray)
             }
         } elseif (!is_operator($infixArray[$infixIndex])) { // if this item is number
             $postfixArray[++$postfixIndex] = $infixArray[$infixIndex++];
-        } elseif ($infixIndex === $infixLength) { // if while at end of infixArray
-            while ($stackTop >= -1) {
-                $postfixArray[++$postfixIndex] = $stack[$stackTop--];
-            }
         }
     }
     while ($stackTop >= 0) {
