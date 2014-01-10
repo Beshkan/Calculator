@@ -1,13 +1,28 @@
 Calculator
 ====
+Copyright (c) 2014  peyman ghafari pour ( پیمان غفاری پور )
 
-weblog:
-  beshkan.blog.ir/page/program
+
+license:
+GNU v3
 
 author,
 programmer,
 etc:
+
   peyman ghafari pour ( پیمان غفاری پور )
+
+
+
+
+GNU Persian language version:
+
+
+blog:
+
+
+  beshkan.blog.ir/page/program
+
 
 
 description:
